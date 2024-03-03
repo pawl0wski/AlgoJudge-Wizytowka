@@ -1,27 +1,26 @@
 ---
 interface Props {
-    title: string;
-    content: string;
+  title: string;
+  content: string;
 }
 
-const {title, content} = Astro.props;
+const { title, content } = Astro.props;
 ---
 
 <section>
-    <h2>{title}</h2>
-    <p>{content}</p>
+  {title !== "" ? <h2>{title}</h2> : null}
+  <p>{content}</p>
 </section>
 
 <style lang="scss">
-    h2 {
-      font-size: xx-large;
-      font-weight: 500;
-    }
+  h2 {
+    font-size: xx-large;
+    font-weight: 500;
+  }
 
-    p {
-      color: lighten(black, 20%);
-      font-size: large;
-        line-height: 1.8rem;
-    }
+  p {
+    color: lighten(black, 20%);
+    font-size: large;
+    line-height: 1.8rem;
+  }
 </style>
-
