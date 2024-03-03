@@ -6,35 +6,35 @@ import CreatedBy from "../components/CreatedBy.astro";
 ---
 
 <Layout title="AlgoJudge">
-    <Header></Header>
-    <article>
-        <slot>
-            <Paragraph
-                    title="Czym jest AlgoJudge."
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor bibendum lacus, quis condimentum nisl. Aenean at ipsum tristique ex interdum rhoncus. Nam lectus mauris, aliquam vel imperdiet vel, venenatis quis odio. Quisque venenatis ex vitae imperdiet volutpat. Vestibulum eu auctor erat, sagittis aliquam nisl. In tincidunt sit amet quam vel condimentum. Donec in convallis orci. Pellentesque molestie nisi bibendum ex facilisis, id suscipit enim sollicitudin. Nullam lobortis pharetra lacus et luctus. Ut sit amet mi dui. Cras vel velit mauris. Aenean posuere auctor euismod. Aliquam at purus efficitur, bibendum tortor vitae, finibus mi. Aenean placerat lectus et viverra gravida. Cras vulputate faucibus efficitur. Ut porta, eros eget vestibulum imperdiet, ex libero ultrices nisi, a porta dolor nisi sit amet nisl.ry"
-            />
-            <Paragraph
-                    title="Co umożliwi projekt AlgoJudge."
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor bibendum lacus, quis condimentum nisl. Aenean at ipsum tristique ex interdum rhoncus. Nam lectus mauris, aliquam vel imperdiet vel, venenatis quis odio. Quisque venenatis ex vitae imperdiet volutpat. Vestibulum eu auctor erat, sagittis aliquam nisl. In tincidunt sit amet quam vel condimentum. Donec in convallis orci. Pellentesque molestie nisi bibendum ex facilisis, id suscipit enim sollicitudin. Nullam lobortis pharetra lacus et luctus. Ut sit amet mi dui. Cras vel velit mauris. Aenean posuere auctor euismod. Aliquam at purus efficitur, bibendum tortor vitae, finibus mi. Aenean placerat lectus et viverra gravida. Cras vulputate faucibus efficitur. Ut porta, eros eget vestibulum imperdiet, ex libero ultrices nisi, a porta dolor nisi sit amet nisl."
-            />
-            <Paragraph
-                    title="O twórcach AlgoJudge."
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor bibendum lacus, quis condimentum nisl. Aenean at ipsum tristique ex interdum rhoncus. Nam lectus mauris, aliquam vel imperdiet vel, venenatis quis odio. Quisque venenatis ex vitae imperdiet volutpat. Vestibulum eu auctor erat, sagittis aliquam nisl. In tincidunt sit amet quam vel condimentum. Donec in convallis orci. Pellentesque molestie nisi bibendum ex facilisis, id suscipit enim sollicitudin. Nullam lobortis pharetra lacus et luctus. Ut sit amet mi dui. Cras vel velit mauris. Aenean posuere auctor euismod. Aliquam at purus efficitur, bibendum tortor vitae, finibus mi. Aenean placerat lectus et viverra gravida. Cras vulputate faucibus efficitur. Ut porta, eros eget vestibulum imperdiet, ex libero ultrices nisi, a porta dolor nisi sit amet nisl."
-            />
-            <CreatedBy />
-        </slot>
-    </article>
+  <Header />
+  <article>
+    <slot>
+      <Paragraph
+        title="Czym jest AlgoJudge."
+        content="AlgoJudge będzie innowacyjną platformą algorytmiczna oparta na ASP.NET. Będzie pozwalała ona na sprawdzanie zadań w C, C++, Pythonie i innych językach programowania które zostaną określone w późniejszym etapie prac oraz organizowanie turniejów algorytmicznych. Korzysta z najnowszych technologii, oferuje intuicyjny interfejs użytkownika."
+      />
+      <Paragraph
+        title="Co umożliwi projekt AlgoJudge."
+        content="Dzięki projektowi AlgoJudge, szybkie i niezawodne sprawdzanie zadań stanie się rzeczywistością. Platforma ta będzie stanowiła odciążenie dla nauczycieli akademickich, umożliwiając im skuteczne weryfikowanie rozwiązań zadań. Dodatkowo, dla studentów AlgoJudge będzie przyjemnym sposobem na wysyłanie zadań, zapewniając szybką i klarowną ocenę ich pracy.<br>Integracja z systemem Moodle zapewni płynne działanie platformy w środowisku edukacyjnym, ułatwiając zarządzanie kursami i zadaniami. Dzięki temu studenci i nauczyciele będą mieli łatwy dostęp do zasobów AlgoJudge bez konieczności przełączania się między różnymi aplikacjami."
+      />
+      <Paragraph
+        title="O twórcach AlgoJudge."
+        content="Koło Naukowe Informatyków to organizacja studencka zrzeszająca miłośników informatyki i programowania, która działa na Wydziale Matematyki i Informatyki Uniwersytetu Mikołaja Kopernika w Toruniu. Członkowie Koła biorą udział w wielu zawodach krajowych i międzynarodowych, m.in.: AMPPZ, CERC, ICPC EUC. Członkowie biorą udział w programie Grants4NCUStudents, z którego finansowane są wyjazdy na zawody oraz przygotowanie do nich. Koło prowadzi cotygodniowe spotkania dla wszystkich studentów, na których poruszane są tematy w formie wykładów i warsztatów. Koło bardzo angażuje się w życie Wydziału oraz Uniwersytetu (meetit.live, dzień liczby Pi, TFNiS)."
+      />
+      <CreatedBy />
+    </slot>
+  </article>
 </Layout>
 
 <style lang="scss">
-    article {
-      width: 60%;
-      margin: auto;
+  article {
+    width: 60%;
+    margin: auto;
 
-      padding-top: 2.5rem;
+    padding-top: 2.5rem;
 
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 </style>
