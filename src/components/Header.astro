@@ -6,7 +6,7 @@
 <style lang="scss">
   header {
 
-    height: 600px;
+    height: 100vh;
     width: 100%;
 
     text-align: center;
@@ -17,9 +17,11 @@
     background-image: url("../../public/img.jpg");
     background-size: cover;
 
+    animation: 1s ease-in 2s forwards shrinkheader ;
+
     h1{
       font-weight: 500;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.20rem;
       font-size: xxx-large;
 
       color: white;
@@ -27,8 +29,17 @@
 
     p {
       color: darken(white, 25%);
-      font-size: large;
-      
+      font-size: 1.2rem;
+    }
+  }
+
+  @keyframes shrinkheader {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 600px;
     }
   }
 </style>
